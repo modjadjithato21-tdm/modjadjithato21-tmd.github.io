@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  
+  <!-- Enhanced SEO Meta Tags -->
+  <title>Thato Modjadji | Business Systems Engineer & Software Developer</title>
+  <meta name="description" content="Professional portfolio of Thato Desmond Modjadji – Business Systems graduate, Java developer, web creator, and snooker strategist. View projects, certifications, and get in touch.">
+  <meta name="keywords" content="Thato Modjadji, Business Systems, Java Developer, Portfolio, Software Engineer, Web Development, Snooker">
+  <meta name="author" content="Thato Desmond Modjadji">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Thato Modjadji | Business Systems Portfolio">
+  <meta property="og:description" content="Business Systems graduate and software developer specializing in Java, web technologies, and innovative digital solutions.">
+  <meta property="og:image" content="images/IMG_20240121_104847.jpg">
+  <meta property="og:type" content="website">
+  
+  <!-- Canonical URL (change after deployment) -->
+  <link rel="canonical" href="https://yourusername.github.io">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body data-theme="dark">
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo"><i class="fas fa-code-branch"></i> TModjadji.dev</div>
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <button id="themeToggle" class="theme-toggle" aria-label="Dark/Light mode"><i class="fas fa-moon"></i></button>
+      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="hero-badge"><i class="fas fa-graduation-cap"></i> Business Systems | Software Developer</div>
+    <h1>Thato Desmond Modjadji</h1>
+    <div class="typing-container">
+      <span class="static-prefix">I'm a </span>
+      <span id="typed-role" class="typed-role"></span>
+      <span class="cursor">|</span>
+    </div>
+    <p>Building innovative digital ecosystems with Java, modern web technologies, and data-driven insights. Passionate about bridging business strategy and technical execution.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary" id="showContactBtn"><i class="fas fa-paper-plane"></i> Contact me</a>
+      <a href="documents/Thato_Resume.pdf" download class="btn-outline" id="resumeDownloadBtn"><i class="fas fa-download"></i> Resume (PDF)</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="images/IMG_20240121_104847.jpg" alt="Thato Modjadji portrait" class="profile-img" onerror="this.src='https://placehold.co/400x400/1e2a3a/00ffaa?text=TM'">
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <div class="section-title"><i class="fas fa-user-astronaut"></i> <span>About Me</span></div>
+    <p style="font-size:1.05rem; margin-bottom: 1.2rem;">Motivated Business Systems graduate with a Bachelor of Information Technology in Business Systems. Skilled in software development, responsive web solutions, and problem-solving. Experienced in building Java applications, full-stack prototypes, and data reporting tools.</p>
+    <p style="font-size:1.05rem;"><i class="fas fa-pool-8-ball" style="color:#00ffaa; margin-right: 8px;"></i> Personal interest: competitive snooker player — strategic thinking, precision, and discipline reflect in my engineering mindset.</p>
+  </section>
+
+  <section id="achievements">
+    <div class="section-title"><i class="fas fa-trophy"></i> <span>Achievements & Recognition</span></div>
+    <div class="grid-2">
+      <div class="card">
+        <h3><i class="fas fa-scroll"></i> Academic Transcript</h3>
+        <p>Top quartile performance in Business Systems analysis & software engineering modules.</p>
+        <a href="documents/transcript.pdf" download class="download-link"><i class="fas fa-file-pdf"></i> Download Transcript (PDF)</a>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-medal"></i> Pool Championship Medal 2024</h3>
+        <p>University inter-collegiate snooker league — silver medalist & strategic MVP award.</p>
+        <img src="images/medal.jpg" alt="medal" style="width: 60px; border-radius: 12px; margin-top: 10px;" onerror="this.style.display='none'">
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-microscope"></i> Research Paper</h3>
+        <p>"Impact of Agile Frameworks on SME Digitalization" — presented at faculty symposium.</p>
+        <a href="documents/research-paper.pdf" download class="download-link"><i class="fas fa-download"></i> Download Research Paper</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-title"><i class="fas fa-laptop-code"></i> <span>Featured Projects</span></div>
+    <div class="grid-2">
+      <div class="card" data-project="inventory">
+        <h3><i class="fas fa-store"></i> Retail Inventory System</h3>
+        <p>Java-based desktop application with MySQL integration, real-time stock tracking, and sales forecasting module.</p>
+        <div class="tech-stack"><span>Java</span><span>MySQL</span><span>JDBC</span><span>Swing</span></div>
+        <div class="project-links">
+          <a href="#" class="project-link" data-project-id="inventory_github" target="_blank"><i class="fab fa-github"></i> GitHub (private)</a>
+          <a href="#" class="project-link" data-project-id="inventory_demo" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        </div>
+        <div class="visit-counter">👁️ Visits: <span class="counter-value">0</span></div>
+      </div>
+      <div class="card" data-project="dashboard">
+        <h3><i class="fas fa-globe"></i> Portfolio & Analytics Dashboard</h3>
+        <p>Responsive web dashboard visualizing business metrics and personal projects with Chart.js & vanilla JS.</p>
+        <div class="tech-stack"><span>HTML5/CSS3</span><span>JavaScript</span><span>Chart.js</span></div>
+        <div class="project-links">
+          <a href="#" class="project-link" data-project-id="dashboard_github" target="_blank"><i class="fab fa-github"></i> Source code</a>
+        </div>
+        <div class="visit-counter">👁️ Visits: <span class="counter-value">0</span></div>
+      </div>
+      <div class="card" data-project="parser">
+        <h3><i class="fas fa-robot"></i> AI Resume Parser</h3>
+        <p>Python Flask app that extracts and scores key skills from CV documents using NLP (spaCy).</p>
+        <div class="tech-stack"><span>Python</span><span>Flask</span><span>spaCy</span></div>
+        <div class="project-links">
+          <a href="#" class="project-link" data-project-id="parser_github" target="_blank">Explore on GitHub</a>
+        </div>
+        <div class="visit-counter">👁️ Visits: <span class="counter-value">0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="github-stats" style="text-align: center;">
+    <div class="section-title"><i class="fab fa-github"></i> <span>GitHub Activity</span></div>
+    <div class="card" style="display: inline-block; min-width: 250px;">
+      <i class="fab fa-github" style="font-size: 3rem; color:#00ffaa;"></i>
+      <p id="github-repo-count">Fetching repos...</p>
+      <p><small>Public repositories</small></p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-title"><i class="fas fa-cogs"></i> <span>Core Competencies</span></div>
+    <div class="grid-2">
+      <div class="card">
+        <h3><i class="fas fa-users"></i> Soft Skills</h3>
+        <div><span class="skill-tag">Team Collaboration</span> <span class="skill-tag">Business Analysis</span> <span class="skill-tag">Agile Methodologies</span> <span class="skill-tag">Communication</span> <span class="skill-tag">Critical Thinking</span></div>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-microchip"></i> Technical Stack</h3>
+        <div><span class="skill-tag">Java (OOP)</span> <span class="skill-tag">JavaScript/ES6</span> <span class="skill-tag">HTML5/CSS3</span> <span class="skill-tag">React (basic)</span> <span class="skill-tag">Node.js</span> <span class="skill-tag">MySQL</span> <span class="skill-tag">MS365 Suite</span> <span class="skill-tag">Git/GitHub</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="section-title"><i class="fas fa-certificate"></i> <span>Certifications</span></div>
+    <div class="grid-3">
+      <div class="card certificate-card">
+        <img src="images/Umalusi.jpg" alt="Umalusi Certificate" class="cert-img" onclick="openModal(this.src, 'Umalusi Certificate')" onerror="this.src='https://placehold.co/300x200/1a2a3a/00ffaa?text=Umalusi'">
+        <a href="images/Umalusi.jpg" download class="download-link"><i class="fas fa-download"></i> Download Certificate</a>
+      </div>
+      <div class="card certificate-card">
+        <img src="images/IntroCyber.jpg" alt="Intro to Cybersecurity" class="cert-img" onclick="openModal(this.src, 'Intro to Cybersecurity')" onerror="this.src='https://placehold.co/300x200/1a2a3a/00ffaa?text=CyberSecurity'">
+        <a href="images/IntroCyber.jpg" download class="download-link"><i class="fas fa-download"></i> Download Certificate</a>
+      </div>
+      <div class="card certificate-card">
+        <img src="images/IntroDataScience.jpg" alt="Data Science Fundamentals" class="cert-img" onclick="openModal(this.src, 'Intro to Data Science')" onerror="this.src='https://placehold.co/300x200/1a2a3a/00ffaa?text=Data+Science'">
+        <a href="images/IntroDataScience.jpg" download class="download-link"><i class="fas fa-download"></i> Download Certificate</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="toggle-buttons">
+    <button class="sec-toggle" onclick="toggleExtraSection('contact')"><i class="fas fa-envelope"></i> Contact Me</button>
+    <button class="sec-toggle" onclick="toggleExtraSection('comments')"><i class="fas fa-comment-dots"></i> Guest Comments</button>
+  </div>
+
+  <!-- Contact Section with EmailJS -->
+  <section id="contact" class="hidden-section">
+    <div class="section-title"><i class="fas fa-address-card"></i> <span>Get in touch</span></div>
+    <form id="contact-form" style="display: flex; flex-direction: column; gap: 1rem;">
+      <input type="text" id="user_name" name="user_name" placeholder="Full name" required>
+      <input type="email" id="user_email" name="user_email" placeholder="Email address" required>
+      <textarea id="message" name="message" rows="4" placeholder="Message / collaboration opportunity..." required></textarea>
+      <button type="submit" id="contact-submit"><i class="fas fa-paper-plane"></i> Send message</button>
+    </form>
+    <div id="contact-log" style="margin-top: 1.2rem; font-size: 0.9rem;"></div>
+    <div style="margin-top: 1.8rem; text-align: center;">
+      <a href="documents/Thato_Resume.pdf" download class="btn-outline" style="gap: 0.4rem;"><i class="fas fa-file-alt"></i> Download full Resume (PDF)</a>
+    </div>
+  </section>
+
+  <section id="comments" class="hidden-section">
+    <div class="section-title"><i class="fas fa-comments"></i> <span>Leave a note</span></div>
+    <form onsubmit="submitComment(event)">
+      <input type="text" id="comment-name" placeholder="Your name" required>
+      <textarea id="comment-text" rows="3" placeholder="Share your feedback..." required></textarea>
+      <button type="submit">Post Comment</button>
+    </form>
+    <div id="comment-count" style="margin-top: 1rem; font-weight: 500;"></div>
+    <ul id="comment-list"></ul>
+  </section>
+</main>
+
+<footer>
+  <div class="social-icons">
+    <a href="https://linkedin.com/in/thatom" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/thatodesmond" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://instagram.com/thatomodjadji" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://youtube.com/@thatotech" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+  <p style="margin-top: 1rem;">© 2025 Thato Desmond Modjadji — Business Systems Engineer | Built with precision and <i class="fas fa-heart" style="color:#00ffaa;"></i></p>
+  <p style="font-size: 0.8rem;">@128 PTY(ltd) | thatos.webdev</p>
+</footer>
+
+<div id="toast" class="toast hidden">✓ Message sent successfully!</div>
+<div id="imageModal" class="modal">
+  <span class="close-modal" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <a id="modalDownloadBtn" class="modal-download" download>Download Image</a>
+</div>
+
+<!-- EmailJS Library -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
